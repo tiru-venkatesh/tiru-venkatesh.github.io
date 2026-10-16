@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0e6">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('tb-theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.classList.add('cover-nav');
+        var m = document.querySelector('meta[name="theme-color"]');
+        if (m) m.setAttribute('content', theme === 'dark' ? '#14110e' : '#f5f0e6');
+      } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
+    })();
+  </script>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <meta name="description" content="Tiru Venkatesh — Founder of OPAI, AI engineer, full-stack developer, and creator behind Tiru Builds and @lockintiru.">
+  <meta property="og:title" content="Tiru Venkatesh — Tiru Builds">
+  <meta property="og:description" content="Building ideas. Shipping impact. Founder of OPAI, AI engineer, and creator behind @lockintiru.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Tiru Venkatesh — Tiru Builds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="Tiru Builds home"><span class="wordmark-mark">TV.</span><span class="wordmark-name">TIRU BUILDS</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#vision">Vision</a>
+      </nav>
+      <a class="header-contact" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle light / dark">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.6A8.5 8.5 0 0 1 9.4 4a8.5 8.5 0 1 0 10.6 10.6z"/></svg>
+      </button>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span>
+      </button>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#about">About <span>01</span></a>
+      <a href="#skills">Skills <span>02</span></a>
+      <a href="#projects">Projects <span>03</span></a>
+      <a href="#journey">Journey <span>04</span></a>
+      <a href="#vision">Vision <span>05</span></a>
+      <a href="#contact">Contact <span>06</span></a>
+    </nav>
+
+    <main id="main">
+      <section class="hero section-wrap" aria-labelledby="hero-title">
+        <div class="hero-topline eyebrow"><span class="status-dot"></span> INDIA-BASED BUILDER <span class="topline-divider">/</span> FOUNDER OF OPAI</div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="hero-kicker">TIRU VENKATESH <span>— 2026</span></p>
+            <h1 id="hero-title">BUILDING<br><span class="hero-outline">IDEAS.</span><br>SHIPPING<br><span class="hero-italic">IMPACT.</span></h1>
+            <p class="hero-description">I build AI-powered products, explore intelligent systems, and share the journey from idea to implementation.</p>
+            <div class="hero-roles"><span>Founder of OPAI</span><i></i><span>AI Engineer</span><i></i><span>Creator @lockintiru</span></div>
+            <div class="hero-actions">
+              <a class="button button-light" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+              <a class="button button-ghost" href="https://opai.live/" target="_blank" rel="noreferrer">Explore OPAI <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="art-coordinate coordinate-one">17°00' N<br>81°47' E</div>
+            <div class="art-coordinate coordinate-two">OBJECT / 001</div>
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+            <figure class="portrait" id="sculpture">
+              <span class="portrait-frame" aria-hidden="true"></span>
+              <picture>
+                <source type="image/webp" srcset="assets/img/tiru-portrait-sm.webp 450w, assets/img/tiru-portrait.webp 900w" sizes="(max-width: 780px) 62vw, 28vw">
+                <img src="assets/img/tiru-portrait.jpg" width="900" height="1125" alt="Tiru Venkatesh, side-lit portrait against a dark background" fetchpriority="high" decoding="async">
+              </picture>
+              <figcaption class="portrait-tag"><span>TIRU V.</span><span>BUILDER</span></figcaption>
+              <span class="portrait-pin pp-a" aria-hidden="true"></span><span class="portrait-pin pp-b" aria-hidden="true"></span><span class="portrait-pin pp-c" aria-hidden="true"></span>
+            </figure>
+            <div class="art-caption"><span>FIG. 01</span><span>IDEAS IN MOTION</span></div>
+            <div class="art-crosshair crosshair-one">+</div><div class="art-crosshair crosshair-two">+</div>
+          </div>
+        </div>
+        <div class="hero-bottomline"><span><span class="scroll-line"></span> SCROLL TO EXPLORE</span><span>LEARN / BUILD / REPEAT</span><span class="hero-index">01 — 06</span></div>
+      </section>
+
+      <section class="intro section-wrap" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal"><p class="eyebrow">01 / ABOUT</p><span class="heading-rule"></span><p class="heading-note">THE PERSON BEHIND THE BUILD</p></div>
+        <div class="intro-grid">
+          <h2 class="section-title reveal" id="about-title">MORE THAN<br>A <span class="muted-word">TITLE.</span></h2>
+          <div class="intro-content reveal">
+            <p class="intro-lead">A builder, first.</p>
+            <p>I'm Tiru Venkatesh — a Computer Science student, AI-focused developer, product builder, and the person behind <strong>Tiru Builds</strong> and <strong>@lockintiru</strong>.</p>
+            <p>I like understanding how systems work, experimenting with new technologies, and turning ideas into usable applications. My work spans AI-powered products, full-stack engineering, computer vision projects, and intelligent workflows.</p>
+            <p>Through OPAI, my projects, and content, I'm learning in public and sharing the work behind the finished product — including the messy parts.</p>
+            <a class="text-link" href="#journey">A little more about my journey <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="identity-grid reveal">
+          <article class="identity-card identity-founder">
+            <div class="card-topline"><span>01 / BUILDER</span><span class="card-arrow">↗</span></div>
+            <div class="identity-symbol symbol-orbit"><span></span><span></span><span></span></div>
+            <div><p class="card-label">FOUNDER</p><h3>OPAI</h3><p>Exploring how intelligent software can help people work, learn, and execute.</p><a href="https://opai.live/" target="_blank" rel="noreferrer" class="card-link">Explore OPAI ↗</a></div>
+          </article>
+          <article class="identity-card identity-engineer">
+            <div class="card-topline"><span>02 / SYSTEMS</span><span class="card-arrow">↗</span></div>
+            <div class="identity-symbol symbol-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div><p class="card-label">ENGINEER</p><h3>Make it work.</h3><p>From interfaces and APIs to LLM integrations and intelligent workflows.</p><a href="#skills" class="card-link">My toolkit ↗</a></div>
+          </article>
+          <article class="identity-card identity-creator">
+            <div class="card-topline"><span>03 / IN PUBLIC</span><span class="card-arrow">↗</span></div>
+            <div class="creator-mark">@<span>lockintiru</span></div>
+            <div><p class="card-label">CREATOR</p><h3>Show the process.</h3><p>Sharing experiments, lessons, builds, and the progress between releases.</p><a href="https://www.instagram.com/lockintiru/" target="_blank" rel="noreferrer" class="card-link">Follow the journey ↗</a></div>
+          </article>
+          <article class="identity-card identity-builder">
+            <div class="card-topline"><span>04 / PRINCIPLE</span><span class="card-arrow">↗</span></div>
+            <div class="principle-type">LEARN<br>BUILD<br><span>REPEAT.</span></div>
+            <div><p class="card-label">PHILOSOPHY</p><h3>Progress over pretence.</h3><p>Learn deeply, build carefully, test honestly, and improve continuously.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills section-wrap" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading reveal"><p class="eyebrow">02 / SKILLS</p><span class="heading-rule"></span><p class="heading-note">TOOLS ARE ONLY THE BEGINNING</p></div>
+        <div class="skills-head reveal"><h2 class="section-title" id="skills-title">MY TECHNICAL<br><span class="muted-word">TOOLKIT.</span></h2><p>Technologies I use, learn, and explore to turn ideas into real software. My focus is on understanding the system — not collecting logos.</p></div>
+        <div class="skills-grid reveal">
+          <article class="skill-card skill-featured"><span class="skill-number">01</span><div class="skill-icon">{ }</div><h3>Programming</h3><p>Building a strong base in programming and problem solving.</p><div class="skill-tags"><span>Python</span><span>Java</span><span>JavaScript</span><span>TypeScript</span><span>C</span><span>SQL</span></div></article>
+          <article class="skill-card"><span class="skill-number">02</span><div class="skill-icon">◫</div><h3>Frontend</h3><p>Responsive interfaces and product experiences.</p><div class="skill-tags"><span>React</span><span>Vite</span><span>HTML</span><span>CSS</span></div></article>
+          <article class="skill-card"><span class="skill-number">03</span><div class="skill-icon">⌘</div><h3>Backend</h3><p>APIs, application logic, and service integration.</p><div class="skill-tags"><span>FastAPI</span><span>Django</span><span>Node.js</span><span>REST APIs</span></div></article>
+          <article class="skill-card skill-wide"><span class="skill-number">04</span><div class="skill-icon">✳</div><h3>AI / ML Systems</h3><p>Exploring the systems behind useful AI applications — from retrieval to agent workflows.</p><div class="skill-tags"><span>LLMs</span><span>RAG</span><span>AI Agents</span><span>Embeddings</span><span>NLP</span><span>Computer Vision</span><span>Generative AI</span></div></article>
+          <article class="skill-card"><span class="skill-number">05</span><div class="skill-icon">↗</div><h3>Build & Deploy</h3><p>Version control, deployment, and project iteration.</p><div class="skill-tags"><span>Git</span><span>GitHub</span><span>Firebase</span><span>Vercel</span><span>Render</span><span>Google Cloud</span></div></article>
+        </div>
+        <p class="skills-footnote reveal"><span class="footnote-mark">*</span> My experience varies by technology. The goal is to keep learning and prove skills through working projects.</p>
+      </section>
+
+      <section class="projects section-wrap" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal"><p class="eyebrow">03 / SELECTED WORK</p><span class="heading-rule"></span><p class="heading-note">IDEAS MADE TANGIBLE</p></div>
+        <div class="projects-head reveal"><h2 class="section-title" id="projects-title">THINGS I'VE<br><span class="muted-word">BUILT.</span></h2><p>A selection of products, experiments, and engineering projects. Each one is part of the learning process.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-opai reveal">
+            <div class="project-visual visual-opai"><div class="visual-window"><div class="window-top"><span class="window-dots"><i></i><i></i><i></i></span><span>OPAI / WORKSPACE</span><span>↗</span></div><div class="mock-workspace"><div class="mock-rail"><b>O.</b><span></span><span></span><span></span><span></span></div><div class="mock-main"><p class="mock-eyebrow">YOUR OPERATING AGENT</p><div class="mock-title">What are we<br>building today?</div><div class="mock-lines"><span></span><span></span></div><div class="mock-input">Ask KARNA anything... <b>↗</b></div><div class="mock-mini-cards"><span>Projects</span><span>Workflows</span><span>Tools</span></div></div></div></div><div class="project-visual-index">01 / FLAGSHIP</div></div>
+            <div class="project-body"><div class="project-meta"><span>AI PRODUCT · OPERATING AGENT</span><span class="project-status"><i></i> BUILDING</span></div><h3>OPAI <span>— Operating Agent</span></h3><p>An AI-focused operating agent and workspace exploring intelligent assistance, workflows, and AI-powered product experiences.</p><div class="project-tags"><span>React</span><span>FastAPI</span><span>LLMs</span><span>Workflows</span></div><div class="project-links"><a href="https://opai.live/" target="_blank" rel="noreferrer">Live product <span>↗</span></a><a href="https://github.com/tiru-venkatesh/opa" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></div>
+          </article>
+          <article class="project-card project-ibvap reveal">
+            <div class="project-visual visual-ibvap"><div class="radar radar-one"></div><div class="radar radar-two"></div><div class="radar radar-three"></div><div class="radar-cross">+</div><div class="detection-box box-one"><span>OBJECT / 01</span></div><div class="detection-box box-two"><span>ZONE / B</span></div><div class="scan-line"></div><div class="visual-caption">VIDEO ANALYTICS / SIMULATED VISUAL</div><div class="project-visual-index">02 / COMPUTER VISION</div></div>
+            <div class="project-body"><div class="project-meta"><span>COMPUTER VISION · HACKATHON</span><span class="project-status"><i></i> PROJECT</span></div><h3>IBVAP <span>— Video Analytics</span></h3><p>An intelligent video analytics project exploring detection, tracking, intrusion alerts, and virtual fencing.</p><div class="project-tags"><span>Computer Vision</span><span>FastAPI</span><span>Analytics</span></div><div class="project-links"><a href="https://ibvap-final.vercel.app/#top" target="_blank" rel="noreferrer">Live demo <span>↗</span></a><a href="https://github.com/tiru-venkatesh/IBVAP" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></div>
+          </article>
+          <article class="project-card project-realmind reveal">
+            <div class="project-visual visual-realmind"><div class="machine-grid"></div><div class="machine-ring ring-large"></div><div class="machine-ring ring-small"></div><div class="machine-core"><span>RM</span></div><div class="machine-orbit orbit-x"></div><div class="machine-orbit orbit-y"></div><div class="visual-label label-top">REALMIND / EXPLORATION</div><div class="visual-label label-bottom">AI × ENGINEERING</div><div class="project-visual-index">03 / AI SYSTEMS</div></div>
+            <div class="project-body"><div class="project-meta"><span>AI ENGINEERING · PRODUCT EXPLORATION</span><span class="project-status"><i></i> EVOLVING</span></div><h3>RealMind <span>— AI Engineering</span></h3><p>A broader AI engineering direction exploring intelligent workflows, inference systems, and AI-powered engineering experiences.</p><div class="project-tags"><span>AI Systems</span><span>Workflows</span><span>Engineering</span></div><div class="project-links"><a href="https://github.com/tiru-venkatesh/realmind-2" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></div>
+          </article>
+          <article class="project-card project-civic reveal">
+            <div class="project-visual visual-civic"><div class="civic-ui"><div class="civic-ui-head"><span>CIVIC / IQ</span><span>INTELLIGENCE</span></div><div class="civic-score"><span>COMPLAINT<br>INTELLIGENCE</span><b>01</b></div><div class="civic-row"><i></i><span>Public infrastructure</span><b>HIGH</b></div><div class="civic-row"><i></i><span>Waste management</span><b>MED</b></div><div class="civic-row"><i></i><span>Street lighting</span><b>LOW</b></div><div class="civic-bars"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div><div class="project-visual-index">04 / CIVIC TECH</div></div>
+            <div class="project-body"><div class="project-meta"><span>AI · CIVIC INTELLIGENCE</span><span class="project-status"><i></i> HACKATHON</span></div><h3>Civic-IQ <span>— Civic Intelligence</span></h3><p>An AI-assisted civic platform concept focused on complaint analysis, prioritization, duplicate detection, and routing.</p><div class="project-tags"><span>TypeScript</span><span>AI Analytics</span><span>Full Stack</span></div><div class="project-links"><a href="https://github.com/tiru-venkatesh/civic-iq" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></div>
+          </article>
+        </div>
+        <div class="more-projects reveal"><div><p class="eyebrow">MORE EXPERIMENTS</p><p>Smaller builds, hackathon explorations, and prototypes also live on GitHub.</p></div><a class="button button-ghost" href="https://github.com/tiru-venkatesh?tab=repositories" target="_blank" rel="noreferrer">Browse repositories <span>↗</span></a></div>
+        <div class="project-mini-grid reveal">
+          <a href="https://github.com/tiru-venkatesh/reflect-ai" target="_blank" rel="noreferrer"><span>05</span><b>ReflectAI</b><small>Personal decision intelligence</small><i>↗</i></a>
+          <a href="https://github.com/tiru-venkatesh/StadiumOS" target="_blank" rel="noreferrer"><span>06</span><b>StadiumOS</b><small>Tournament operations</small><i>↗</i></a>
+          <a href="https://github.com/tiru-venkatesh/ecotrack-ai" target="_blank" rel="noreferrer"><span>07</span><b>EcoTrack AI</b><small>Environmental awareness</small><i>↗</i></a>
+          <a href="https://github.com/tiru-venkatesh/election-flow-ai" target="_blank" rel="noreferrer"><span>08</span><b>ElectionFlow AI</b><small>Interactive learning app</small><i>↗</i></a>
+        </div>
+      </section>
+
+      <section class="journey section-wrap" id="journey" aria-labelledby="journey-title">
+        <div class="section-heading reveal"><p class="eyebrow">04 / JOURNEY</p><span class="heading-rule"></span><p class="heading-note">BUILT THROUGH DOING</p></div>
+        <div class="journey-layout">
+          <div class="journey-title-block reveal"><h2 class="section-title" id="journey-title">PROGRESS<br>OVER <span class="muted-word">PRETENCE.</span></h2><p>Every project adds a new question. Every bug leaves a lesson. The goal is to keep moving with intention.</p><a class="text-link" href="https://www.linkedin.com/in/tiru-venkatesh-830907202/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div>
+          <div class="timeline reveal">
+            <article class="timeline-item"><div class="timeline-marker"><span></span></div><div class="timeline-copy"><p class="timeline-label">THE FOUNDATIONS</p><h3>Learn by building.</h3><p>Developing programming and web development fundamentals through hands-on projects and experiments.</p></div><span class="timeline-count">01</span></article>
+            <article class="timeline-item"><div class="timeline-marker"><span></span></div><div class="timeline-copy"><p class="timeline-label">PRODUCT EXPLORATION</p><h3>From pages to products.</h3><p>Building full-stack applications and exploring how design, APIs, and product thinking come together.</p></div><span class="timeline-count">02</span></article>
+            <article class="timeline-item"><div class="timeline-marker"><span></span></div><div class="timeline-copy"><p class="timeline-label">AI ENGINEERING</p><h3>Go deeper into intelligence.</h3><p>Exploring LLMs, retrieval, agents, and the engineering behind useful AI experiences.</p></div><span class="timeline-count">03</span></article>
+            <article class="timeline-item"><div class="timeline-marker"><span></span></div><div class="timeline-copy"><p class="timeline-label">HACKATHONS & OPEN SOURCE</p><h3>Build with constraints.</h3><p>Participating in technical challenges, collaborating with teammates, and exploring open-source projects.</p></div><span class="timeline-count">04</span></article>
+            <article class="timeline-item"><div class="timeline-marker"><span></span></div><div class="timeline-copy"><p class="timeline-label">NOW</p><h3>Building OPAI. Sharing the process.</h3><p>Continuing to develop products while documenting the journey through Tiru Builds and @lockintiru.</p></div><span class="timeline-count">05</span></article>
+          </div>
+        </div>
+        <div class="recognition-grid reveal">
+          <article class="recognition-card"><span class="recognition-icon">✳</span><div><p class="eyebrow">RECOGNITION</p><h3>PromptWars · Top 400</h3><p>Virtual Challenge 3 — Google for Developers × H2S. Include certificate link when available.</p></div><span class="recognition-arrow">↗</span></article>
+          <article class="recognition-card"><span class="recognition-icon">◎</span><div><p class="eyebrow">HACKATHON</p><h3>Google Cloud Gen AI Academy</h3><p>Civic-IQ team result: Top 101 / Rank 91, as reported by the team.</p></div><span class="recognition-arrow">↗</span></article>
+          <article class="recognition-card"><span class="recognition-icon">◇</span><div><p class="eyebrow">CREDENTIAL</p><h3>Best of Next ’26</h3><p>Google Cloud Asia Pacific credential.</p></div><span class="recognition-arrow">↗</span></article>
+        </div>
+      </section>
+
+      <section class="creator section-wrap" id="creator" aria-labelledby="creator-title">
+        <div class="creator-panel reveal">
+          <div class="creator-panel-top"><p class="eyebrow">05 / BUILD IN PUBLIC</p><span class="creator-live"><i></i> JOURNEY IN PROGRESS</span></div>
+          <div class="creator-layout"><div><p class="creator-handle">@lockintiru</p><h2 id="creator-title">THE WORK<br>BEHIND THE<br><span>WORK.</span></h2></div><div class="creator-copy"><p>I'm building more than software. I'm documenting the process — experiments, lessons, failures, ideas, and the progress that happens between releases.</p><p>The audience is still growing. The commitment to creating and improving is what matters.</p><a class="button button-light" href="https://www.instagram.com/lockintiru/" target="_blank" rel="noreferrer">Follow the journey <span>↗</span></a></div></div>
+          <div class="creator-bottom"><span>BUILD LOG / 001</span><span>IDEAS → EXPERIMENTS → ITERATIONS</span><span>TIRU BUILDS ©</span></div>
+        </div>
+      </section>
+
+      <section class="vision section-wrap" id="vision" aria-labelledby="vision-title">
+        <div class="section-heading reveal"><p class="eyebrow">06 / VISION</p><span class="heading-rule"></span><p class="heading-note">LOOKING FORWARD</p></div>
+        <div class="vision-layout reveal"><div><p class="eyebrow vision-overline">THE LONG GAME</p><h2 id="vision-title">BUILD SYSTEMS<br>THAT MAKE<br><span class="muted-word">INTELLIGENCE</span><br>USEFUL.</h2></div><div class="vision-content"><p class="vision-quote">“The vision is ambitious. The work starts with what I can build today.”</p><p>I'm interested in the intersection of AI, software, and systems that help people create, understand, and execute. Through OPAI and future projects, I want to explore how intelligent systems can move beyond answering questions toward helping people complete meaningful work.</p><div class="vision-pillars"><div><span>01</span><b>Intelligent systems</b></div><div><span>02</span><b>Useful products</b></div><div><span>03</span><b>Continuous experimentation</b></div></div><a class="text-link" href="https://opai.live/" target="_blank" rel="noreferrer">Explore what I'm building <span>↗</span></a></div></div>
+        <div class="vision-art reveal" aria-hidden="true"><div class="vision-art-grid"></div><div class="vision-orb"><div class="vision-orb-inner"></div><span class="orb-line orb-line-a"></span><span class="orb-line orb-line-b"></span><span class="orb-line orb-line-c"></span></div><span class="vision-art-note note-left">INTELLIGENCE / IN MOTION</span><span class="vision-art-note note-right">FIG. 002 — FUTURE SYSTEMS</span></div>
+      </section>
+
+      <section class="contact section-wrap" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading reveal"><p class="eyebrow">07 / CONTACT</p><span class="heading-rule"></span><p class="heading-note">LET'S BUILD TOGETHER</p></div>
+        <div class="contact-layout reveal"><div class="contact-copy"><h2 id="contact-title">HAVE SOMETHING<br>WORTH <span class="muted-word">BUILDING?</span></h2><p>Have an idea, a project, or an opportunity to collaborate? I'm open to thoughtful conversations around AI engineering, product development, hackathons, and open source.</p><a class="contact-email" href="mailto:tiruvenkatesh123@gmail.com">tiruvenkatesh123@gmail.com <span>↗</span></a></div><div class="contact-links"><a href="mailto:tiruvenkatesh123@gmail.com"><span class="contact-link-icon">✉</span><span><small>EMAIL</small><b>Let's talk</b></span><i>↗</i></a><a href="https://github.com/tiru-venkatesh" target="_blank" rel="noreferrer"><span class="contact-link-icon">⌘</span><span><small>GITHUB</small><b>Explore the code</b></span><i>↗</i></a><a href="https://www.linkedin.com/in/tiru-venkatesh-830907202/" target="_blank" rel="noreferrer"><span class="contact-link-icon">in</span><span><small>LINKEDIN</small><b>Connect professionally</b></span><i>↗</i></a><a href="https://www.instagram.com/lockintiru/" target="_blank" rel="noreferrer"><span class="contact-link-icon">◎</span><span><small>INSTAGRAM</small><b>@lockintiru</b></span><i>↗</i></a></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap"><div class="footer-main"><a class="wordmark footer-wordmark" href="#top"><span class="wordmark-mark">TV.</span><span class="wordmark-name">TIRU BUILDS</span></a><p>Building from India.<br>Learning by doing.</p><a class="back-top" href="#top">BACK TO TOP <span>↑</span></a></div><div class="footer-bottom"><span>© <span id="current-year">2026</span> TIRU VENKATESH</span><span>BUILT WITH CURIOSITY & INTENTION</span><span>INDIA <b>↗</b></span></div></footer>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+</body>
+</html>
